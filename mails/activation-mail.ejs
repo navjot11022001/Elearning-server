@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <%- include('./partials/activation-mailstyles.ejs') %>
+  </head>
+  <body>
+    <div class="email-wrapper">
+      <div class="email-header">
+        <h1>Welcome to Learners.in</h1>
+      </div>
+      <div class="email-body">
+        <p>hello <%= user.name %></p>
+        <p>
+          Thankyou for registring with Learning.in ,To activate your account
+          please use the following actvation code:
+        </p>
+        <h2><%= activationCode %></h2>
+        <p>This activation code will expire in next 15 min</p>
+        <p>If this was not done by you,please ignore this email</p>
+      </div>
+      <div class="email-footer">
+        <p>
+          If you have any question ,please don't hesitate to contact us at
+          <a href="cunavjot@gmail.com">cunavjot@gmail.com </a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
